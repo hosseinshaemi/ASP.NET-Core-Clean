@@ -3,7 +3,7 @@ using HR_Management.Application.DTOs.Common;
 using HR_Management.Application.DTOs.LeaveType;
 namespace HR_Management.Application.DTOs.LeaveRequest;
 
-public class LeaveRequestDto : BaseDto
+public class LeaveRequestDto : BaseDto, ILeaveRequestDto
 {
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
