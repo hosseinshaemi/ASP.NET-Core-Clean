@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 namespace HR_Management.Application.Persistence.Contracts;
 
 public interface IGenericRepository<T> where T : class

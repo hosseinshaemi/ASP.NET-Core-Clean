@@ -1,9 +1,9 @@
+using MediatR;
 using AutoMapper;
+using HR_Management.Application.Exceptions;
+using HR_Management.Application.Persistence.Contracts;
 using HR_Management.Application.DTOs.LeaveRequest.Validators;
 using HR_Management.Application.Features.LeaveRequests.Requests.Commands;
-using HR_Management.Application.Persistence.Contracts;
-using MediatR;
-
 namespace HR_Management.Application.Features.LeaveRequests.Handlers.Commands;
 
 public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveRequestCommand, Unit>
@@ -25,7 +25,7 @@ public class UpdateLeaveRequestCommandHandler : IRequestHandler<UpdateLeaveReque
         var result = await validator.ValidateAsync(request.LeaveRequestDto);
 
         if (!result.IsValid)
-            throw new Exception();
+            throw new ValidationException(result);
 
         var leaveRequest = await _leaveRequestRepository.Get(request.Id);
         if (request.LeaveRequestDto != null)
