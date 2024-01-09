@@ -17,6 +17,9 @@ public class UpdateLeaveTypeCommandHandler : IRequestHandler<UpdateLeaveTypeComm
 
     public async Task<Unit> Handle(UpdateLeaveTypeCommand request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        var leaveType = await _leaveTypeRepository.Get(request.LeaveTypeDto.Id);
+        _mapper.Map(request.LeaveTypeDto, leaveType);
+        await _leaveTypeRepository.Update(leaveType);
+        return Unit.Value;
     }
 }
