@@ -1,7 +1,8 @@
 using AutoMapper;
 using HR_Management_Domain;
-using HR_Management.Application.DTOs;
+using HR_Management.Application.DTOs.LeaveType;
 using HR_Management.Application.DTOs.LeaveRequest;
+using HR_Management.Application.DTOs.LeaveAllocation;
 namespace HR_Management.Application.Profiles;
 
 public class MappingProfile : Profile

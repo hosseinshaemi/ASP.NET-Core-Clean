@@ -1,6 +1,7 @@
 #nullable disable
 using HR_Management.Application.DTOs.Common;
-namespace HR_Management.Application.DTOs;
+using HR_Management.Application.DTOs.LeaveType;
+namespace HR_Management.Application.DTOs.LeaveAllocation;
 
 public class LeaveAllocationDto : BaseDto
 {
