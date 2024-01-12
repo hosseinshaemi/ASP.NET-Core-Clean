@@ -1,7 +1,7 @@
 #nullable disable
 using HR_Management_Domain;
 using Microsoft.EntityFrameworkCore;
-using HR_Management.Application.Persistence.Contracts;
+using HR_Management.Application.Contracts.Persistence;
 namespace HR_Management.Persistence.Repositories;
 
 public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILeaveAllocationRepository

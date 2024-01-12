@@ -2,7 +2,7 @@ using MediatR;
 using AutoMapper;
 using HR_Management_Domain;
 using HR_Management.Application.Exceptions;
-using HR_Management.Application.Persistence.Contracts;
+using HR_Management.Application.Contracts.Persistence;
 using HR_Management.Application.DTOs.LeaveType.Validators;
 using HR_Management.Application.Features.LeaveTypes.Requests.Commands;
 namespace HR_Management.Application.Features.LeaveTypes.Handlers.Commands;
