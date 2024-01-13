@@ -2,4 +2,5 @@
 **/bin/
 **/obj/
 **/Publish/
+.config/
 database.db
