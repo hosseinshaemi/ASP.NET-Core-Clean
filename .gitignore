@@ -4,3 +4,4 @@
 **/Publish/
 .config/
 database.db
+**/appsettings.json
