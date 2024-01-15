@@ -25,7 +25,7 @@ public class LeaveRequestsController : ControllerBase
     }
 
     // GET: api/LeaveRequests/5
-    [HttpGet("{id}", Name = "Get")]
+    [HttpGet("{id}", Name = "GetLeaveRequest")]
     public async Task<ActionResult<LeaveRequestDto>> Get(int id)
     {
         LeaveRequestDto leaveRequest = await _mediator.Send(new GetLeaveRequestDetailRequest() { Id = id });
