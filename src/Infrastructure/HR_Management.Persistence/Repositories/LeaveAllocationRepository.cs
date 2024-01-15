@@ -1,5 +1,5 @@
 #nullable disable
-using HR_Management_Domain;
+using HR_Management.Domain;
 using Microsoft.EntityFrameworkCore;
 using HR_Management.Application.Contracts.Persistence;
 namespace HR_Management.Persistence.Repositories;

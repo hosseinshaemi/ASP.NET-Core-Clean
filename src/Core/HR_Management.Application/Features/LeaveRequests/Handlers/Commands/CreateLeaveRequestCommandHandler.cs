@@ -1,6 +1,6 @@
 using MediatR;
 using AutoMapper;
-using HR_Management_Domain;
+using HR_Management.Domain;
 using HR_Management.Application.Responses;
 using HR_Management.Application.Contracts.Persistence;
 using HR_Management.Application.DTOs.LeaveRequest.Validators;

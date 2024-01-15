@@ -1,6 +1,6 @@
 #nullable disable
-using HR_Management_Domain.Common;
-namespace HR_Management_Domain;
+using HR_Management.Domain.Common;
+namespace HR_Management.Domain;
 
 public class LeaveAllocation : BaseDomainEntity
 {

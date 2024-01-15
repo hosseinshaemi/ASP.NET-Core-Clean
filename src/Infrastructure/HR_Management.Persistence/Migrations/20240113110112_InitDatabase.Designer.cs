@@ -20,7 +20,7 @@ namespace HR_Management.Persistence.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.15");
 
-            modelBuilder.Entity("HR_Management_Domain.LeaveAllocation", b =>
+            modelBuilder.Entity("HR_Management.Domain.LeaveAllocation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -54,7 +54,7 @@ namespace HR_Management.Persistence.Migrations
                     b.ToTable("LeaveAllocations");
                 });
 
-            modelBuilder.Entity("HR_Management_Domain.LeaveRequest", b =>
+            modelBuilder.Entity("HR_Management.Domain.LeaveRequest", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -103,7 +103,7 @@ namespace HR_Management.Persistence.Migrations
                     b.ToTable("LeaveRequests");
                 });
 
-            modelBuilder.Entity("HR_Management_Domain.LeaveType", b =>
+            modelBuilder.Entity("HR_Management.Domain.LeaveType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -132,9 +132,9 @@ namespace HR_Management.Persistence.Migrations
                     b.ToTable("LeaveTypes");
                 });
 
-            modelBuilder.Entity("HR_Management_Domain.LeaveAllocation", b =>
+            modelBuilder.Entity("HR_Management.Domain.LeaveAllocation", b =>
                 {
-                    b.HasOne("HR_Management_Domain.LeaveType", "LeaveType")
+                    b.HasOne("HR_Management.Domain.LeaveType", "LeaveType")
                         .WithMany()
                         .HasForeignKey("LeaveTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -143,9 +143,9 @@ namespace HR_Management.Persistence.Migrations
                     b.Navigation("LeaveType");
                 });
 
-            modelBuilder.Entity("HR_Management_Domain.LeaveRequest", b =>
+            modelBuilder.Entity("HR_Management.Domain.LeaveRequest", b =>
                 {
-                    b.HasOne("HR_Management_Domain.LeaveType", "LeaveType")
+                    b.HasOne("HR_Management.Domain.LeaveType", "LeaveType")
                         .WithMany()
                         .HasForeignKey("LeaveTypeId")
                         .OnDelete(DeleteBehavior.Cascade)

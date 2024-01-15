@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\HR_Management.Application\HR_Management.Application.csproj" />
-    <ProjectReference Include="..\..\Core\HR_Management_Domain\HR_Management_Domain.csproj" />
+    <ProjectReference Include="..\..\Core\HR_Management.Domain\HR_Management.Domain.csproj" />
     <ProjectReference Include="..\..\Infrastructure\HR_Management.Infrastructure\HR_Management.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\HR_Management.Persistence\HR_Management.Persistence.csproj" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-using HR_Management_Domain;
+using HR_Management.Domain;
 namespace HR_Management.Application.Contracts.Persistence;
 
 public interface ILeaveRequestRepository : IGenericRepository<LeaveRequest>

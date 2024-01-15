@@ -1,5 +1,5 @@
 using AutoMapper;
-using HR_Management_Domain;
+using HR_Management.Domain;
 using HR_Management.Application.DTOs.LeaveType;
 using HR_Management.Application.DTOs.LeaveRequest;
 using HR_Management.Application.DTOs.LeaveAllocation;

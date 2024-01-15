@@ -1,4 +1,4 @@
-namespace HR_Management_Domain.Common;
+namespace HR_Management.Domain.Common;
 
 public abstract class BaseDomainEntity
 {

@@ -1,5 +1,5 @@
-﻿using HR_Management_Domain;
-using HR_Management_Domain.Common;
+﻿using HR_Management.Domain;
+using HR_Management.Domain.Common;
 using Microsoft.EntityFrameworkCore;
 namespace HR_Management.Persistence;
 

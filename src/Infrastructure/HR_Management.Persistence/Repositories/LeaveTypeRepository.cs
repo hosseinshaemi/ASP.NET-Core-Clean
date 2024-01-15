@@ -1,5 +1,5 @@
 using HR_Management.Application.Contracts.Persistence;
-using HR_Management_Domain;
+using HR_Management.Domain;
 
 namespace HR_Management.Persistence.Repositories;
 
