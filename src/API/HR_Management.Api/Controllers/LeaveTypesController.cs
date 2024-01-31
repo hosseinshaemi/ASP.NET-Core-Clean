@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using HR_Management.Application.DTOs.LeaveType;
 using HR_Management.Application.Features.LeaveTypes.Requests.Queries;
 using HR_Management.Application.Features.LeaveTypes.Requests.Commands;
+using HR_Management.Application.Responses;
 namespace HR_Management.Api.Controller;
 
 [Route("api/[controller]")]
@@ -34,7 +35,7 @@ public class LeaveTypesController : ControllerBase
 
     // POST: api/LeaveTypes
     [HttpPost]
-    public async Task<ActionResult> Post([FromBody] CreateLeaveTypeDto leaveType)
+    public async Task<ActionResult<BaseCommandResponse>> Post([FromBody] CreateLeaveTypeDto leaveType)
     {
         CreateLeaveTypeCommand command = new() { LeaveTypeDto = leaveType };
         var response = await _mediator.Send(command);

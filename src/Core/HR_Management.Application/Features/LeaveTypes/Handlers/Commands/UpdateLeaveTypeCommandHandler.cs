@@ -25,6 +25,7 @@ public class UpdateLeaveTypeCommandHandler : IRequestHandler<UpdateLeaveTypeComm
         if (!result.IsValid)
             throw new ValidationException(result);
 
+        
         var leaveType = await _leaveTypeRepository.Get(request.LeaveTypeDto.Id);
         _mapper.Map(request.LeaveTypeDto, leaveType);
         await _leaveTypeRepository.Update(leaveType);
